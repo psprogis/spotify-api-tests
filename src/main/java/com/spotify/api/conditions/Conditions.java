@@ -10,7 +10,7 @@ public class Conditions {
         return new StatusCodeCondition(code);
     }
 
-    public BodyFieldCondition bodyField(String jsonPath, Matcher matcher) {
+    public BodyFieldCondition bodyCondition(String jsonPath, Matcher matcher) {
         return new BodyFieldCondition(jsonPath, matcher);
     }
 }
