@@ -11,6 +11,7 @@ import lombok.experimental.Accessors;
 @Setter
 @Accessors(fluent = true)
 @ToString
+
 public class TrackItem {
     @JsonProperty("album")
     public Album album;
@@ -62,4 +63,22 @@ public class TrackItem {
 
     @JsonProperty("uri")
     public String uri;
+
+    @JsonProperty("total")
+    public String total;
+
+    @JsonProperty("items")
+    public Object items;
+
+    @JsonProperty("limit")
+    public int limit;
+
+    @JsonProperty("next")
+    public String next;
+
+    @JsonProperty("offset")
+    private int offset;
+
+    @JsonProperty("previous")
+    private int previous;
 }
