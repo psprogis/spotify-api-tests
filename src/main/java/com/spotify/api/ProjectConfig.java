@@ -7,8 +7,9 @@ public interface ProjectConfig extends  Config {
 
     String baseUrl();
     String authorizeUrl();
-    String refreshToken();
-    String clientId();
     String redirectUrl();
+    String refreshToken();
     String scope();
+    String clientId();
+    String clientPass();
 }

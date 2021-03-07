@@ -58,7 +58,5 @@ public class Items {
     public Object primaryColor;
 
     @JsonProperty("tracks")
-    public Tracks tracks;
-
+    public TrackItem tracks;
 }
-
